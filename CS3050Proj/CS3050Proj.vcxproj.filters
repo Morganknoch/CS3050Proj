@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Source\Repos\CS3050_Final\CS3050_Final\main.c">
+    <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\..\..\Source\Repos\CS3050_Final\CS3050_Final\capitals.txt">
+    <Text Include="capitals.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="..\..\..\..\..\Source\Repos\CS3050_Final\CS3050_Final\capitalsnum.txt">
+    <Text Include="capitalsnum.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

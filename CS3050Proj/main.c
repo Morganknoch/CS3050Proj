@@ -2,22 +2,24 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include <ctype.h>
+#include<ctype.h>
 
 #define MAXLINELENGTH 80
 #define HASHSIZE 100
 
+// struct for nodes in graph
 typedef struct capitalNode {
 	char cityName[50];
 	char stateName[50];
 	int visited;
-	struct capitalNode *parent;
-	struct capitalListNode* neighborCities;
-	struct capitalNode *nextHash;
+	struct capitalNode *parent;					// parent in the shortest path
+	struct capitalListNode* neighborCities;		// adjacency list head pointer
+	struct capitalNode *nextHash;				// used hash table
 }capitalNode;
 
+// struct for adjacency list 
 typedef struct capitalListNode {
-	capitalNode city[50];
+	char city[50];
 	int dist;
 	struct capitalListNode* next;
 }capitalListNode;
@@ -67,7 +69,7 @@ void inputCapitals(char* inputFile)
 	FILE* input;
 	if ((input = fopen(inputFile, "r")) == NULL)
 	{
-		perror("\nUnable to open file %s", inputFile);
+		perror("\nUnable to open file");
 		exit(0);
 	}
 

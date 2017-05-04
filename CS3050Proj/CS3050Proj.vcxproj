@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Source\Repos\CS3050_Final\CS3050_Final\main.c" />
+    <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\..\..\Source\Repos\CS3050_Final\CS3050_Final\capitals.txt" />
-    <Text Include="..\..\..\..\..\Source\Repos\CS3050_Final\CS3050_Final\capitalsnum.txt" />
+    <Text Include="capitals.txt" />
+    <Text Include="capitalsnum.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
